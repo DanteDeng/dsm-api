@@ -30,4 +30,11 @@ public interface IFileOperationService {
 	 */
 	boolean deleteFile(FileInfoParam fileInfo) throws Exception;
 
+	/**
+	 * 读取一个文件，并将文件结果以base64字符串形式返回
+	 * @param configFilePath
+	 * @return
+	 */
+	String readFile(String configFilePath) throws Exception;
+
 }
